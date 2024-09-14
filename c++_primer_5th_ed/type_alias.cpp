@@ -11,6 +11,8 @@ int main()
 
     
     using SI = Sales_item;  // SI is a synonym for Sales_item
+    char a = 206;
+    std::cout << a << std::endl;
 
 
     return 0;
