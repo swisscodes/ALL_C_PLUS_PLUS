@@ -17,5 +17,11 @@ int main()
 
     /* After a reference has been defined, all operations on that reference are actually
        operations on the object to which the reference is bound:
+
+
+       When we assign to a reference, we are assigning to the object to which the reference
+       is bound. When we fetch the value of a reference, we are really fetching the value of
+       the object to which the reference is bound. Similarly, when we use a reference as an
+       initializer, we are really using the object to which the reference is bound:
     */
 }
