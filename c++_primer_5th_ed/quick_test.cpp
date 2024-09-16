@@ -7,5 +7,5 @@ int main()
     const int sz = cnt;
     ++cnt; ++cnt;
 
-    std::cout << cnt << std::endl;
+    std::cout << "\u0F4F " << cnt << std::endl;
 }
