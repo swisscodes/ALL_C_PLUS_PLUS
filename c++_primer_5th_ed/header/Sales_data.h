@@ -1,4 +1,7 @@
+#ifndef SALES_DATA_H
+#define SALES_DATA_H
 #include <iostream>
+#include <string>
 
 struct Sales_data
 {
@@ -6,10 +9,4 @@ struct Sales_data
     unsigned unitsSold = 0;
     double revenue = 0.0;
 };
-
-Sales_data accum, trans, *salesptr;
-
-int main()
-{
-    return 0;
-}
+#endif
