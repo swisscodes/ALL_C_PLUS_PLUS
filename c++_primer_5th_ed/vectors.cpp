@@ -26,5 +26,23 @@ int main()
     vector<int> ivec3 = ivec;   // copy elements of ivec into ivec3
     //vector<string> svec(ivec2);     // error: svec holds strings, not ints
 
+
+    /* ADDING TO VECTORS*/
+    vector<int> abc;
+    for (int i = 0; i < 100; ++i)
+    {
+        abc.push_back(i+1);
+    }
+    std::cout << abc.size() << std::endl;
+
+
+    // read words from the standard input and store them as elements in a vector
+    string word;
+    vector<string> text;    // empty vector
+    while (std::cin >> word) {
+        text.push_back(word);   // append word to text
+    }
+    
+
     return 0;
 }
