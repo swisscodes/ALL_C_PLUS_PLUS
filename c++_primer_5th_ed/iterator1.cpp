@@ -4,7 +4,7 @@
 
 int main()
 {
-    std::vector<std::string> str = {"Hello", "world", "check this out"};
+    std::vector<std::string> str = {"Hello", "world", "check this out", "zyxwvutsrqponmlkjihgfedcba"};
 
     for (auto &word : str) // reference or address of the word/string is important here to be able to make changes. else we will work with copy
     {
