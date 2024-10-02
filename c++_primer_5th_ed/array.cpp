@@ -6,7 +6,7 @@ int main()
     int arr1[3]{1, 2, 3};
     int arr2[3] = {1, 2, 3};
 
-    constexpr unsigned sz = 3;
+    constexpr size_t sz = 3;
     int ia1[sz] = {0, 1, 2};           // array of three ints with values 0, 1, 2
     int a2[] = {0, 1, 2};              // an array of dimension 3
     int a3[5] = {0, 1, 2};             // equivalent to a3[] = {0, 1, 2, 0, 0}

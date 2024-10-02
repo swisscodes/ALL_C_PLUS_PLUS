@@ -64,6 +64,9 @@ int main()
     int ival = 1024;
     int *pi = &ival; // pi points to an int
     int **ppi = &pi; // ppi points to a pointer to an int...... we can say nested pointer
+
+    int *ip[4];     // array of pointers to int
+    int (*ip)[4];   // pointer to an array of four ints
     
     return 0;
 }

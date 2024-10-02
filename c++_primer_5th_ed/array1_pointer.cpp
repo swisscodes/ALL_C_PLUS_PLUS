@@ -1,5 +1,5 @@
 #include <iostream>
-#include <algorithm>
+// #include <algorithm> for transform
 
 int main()
 {
@@ -13,10 +13,10 @@ int main()
         size_t count = 0;
         while (count < word.size())
         {
-            for (auto abc = begin(word), cde = abc + 1; cde != end(word); ++abc, ++cde)
+            for (auto abc = std::begin(word), cde = abc + 1; cde != std::end(word); ++abc, ++cde)
             {
-                *abc = tolower(*abc);
-                *cde = tolower(*cde);
+                *abc = std::tolower(*abc);
+                *cde = std::tolower(*cde);
                 if (*abc > *cde)
                 {
                     auto temp = *cde;
