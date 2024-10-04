@@ -62,7 +62,9 @@
 		"typeinfo": "cpp",
 		"ranges": "cpp",
 		"span": "cpp",
-		"variant": "cpp"
+		"variant": "cpp",
+		"charconv": "cpp",
+		"format": "cpp"
 	},
 	"C_Cpp.errorSquiggles": "enabled"
 }
