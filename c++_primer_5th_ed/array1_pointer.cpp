@@ -7,7 +7,7 @@ int main()
 
     // auto *str_ptr = str_arr;
 
-    for (auto &word : str_arr)
+    for (std::string &word : str_arr)
     {
         // std::transform(word.begin(), word.end(), word.begin(), ::tolower); // converts word to lower
         size_t count = 0;

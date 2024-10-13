@@ -35,4 +35,5 @@
 
 #vscode
 *.vscode/
-*/.vs/
+*.vs/
+.fake
