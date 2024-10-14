@@ -1,5 +1,13 @@
 #include <iostream>
 
+
+// ok: parameter is a reference to an array; the dimension is part of the type
+    void print(int (&arr)[10])
+    {
+        ;
+    }
+
+
 int fact(int val)
 {
     int result = 1;
@@ -29,6 +37,13 @@ int main()
     };
 
     ptr_test(&ptr_num);
+
+    const int ci = 42;
+    int i = ci;
+    int * const p = &i; // can only point to i, const int pointer
+    *p = i;
+
+    std::cout << *p << std::endl;
 
 
     return 0;
