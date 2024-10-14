@@ -33,13 +33,7 @@
 *build/
 
 
-<<<<<<< HEAD
-# vscode
-.vscode/
-.vs/
-=======
 #vscode
 *.vscode/
 *.vs/
 .fake
->>>>>>> windows
