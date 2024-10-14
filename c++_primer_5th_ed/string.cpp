@@ -6,6 +6,17 @@ using std::cout;
 using std::endl;
 using std::string;
 
+
+void str_fn(const string &s) // always use const string if you taking a string.
+{
+
+}
+//or prefer this
+void doSomething(std::string_view s)
+{
+
+}
+
 int main()
 {
     string s1;
