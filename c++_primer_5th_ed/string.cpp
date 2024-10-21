@@ -32,9 +32,9 @@ int main()
     string a_line;
 
     cin >> a_word;
-    cout << a_word << " just a word" << endl;
+    cout << a_word << " just a word" << std::endl;
 
-    cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n'); //this line is important to clear buffer after using cin and when we have to use getline
+    //cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n'); //this line is important to clear buffer after using cin and when we have to use getline
 
     std::getline(cin, a_line);
     cout << a_line << " just a line" << endl;
