@@ -22,4 +22,13 @@ int main()
         slist.clear(); // delete all the elements within the container
         slist.erase(slist.begin(), slist.end()); // equivalent
     */
+
+   std::string s;
+   s.insert(s.size(), 5, 'a');
+   /*
+    assign
+    append
+    replace
+   */
+  
 }
