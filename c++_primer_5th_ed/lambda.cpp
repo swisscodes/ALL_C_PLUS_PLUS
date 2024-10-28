@@ -55,8 +55,15 @@ int main()
 
     gg1();
 
-    // or everything by value and some by ref
+    // or everything by value
     auto gg3 = [=]() mutable
+    {
+        test = 9;
+        yu += abc;
+        std::cout << abc << std::endl;
+    };
+     // or everything by reference
+    auto gg3 = [&]() mutable
     {
         test = 9;
         yu += abc;
