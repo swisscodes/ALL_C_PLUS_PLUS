@@ -18,7 +18,7 @@ int main()
     };
 
     int ok = print(6);
-    std::cout << abc << std::endl;
+    //std::cout << abc << std::endl;
 
     /*  We can omit either or both of the parameter list and return type but must always
         include the capture list and function body:
@@ -46,16 +46,16 @@ int main()
         std::cout << abc << std::endl;
     };
 
-    // or everything by value and some by ref
+    // or everythintestg by value and some by ref
     auto gg2 = [=, &yu]()
     {
         yu += abc;
         std::cout << abc << std::endl;
     };
 
-    gg1();
+    //gg1();
 
-    // or everything by value
+    // or everything by value copied and we can change the local value
     auto gg3 = [=]() mutable
     {
         test = 9;
@@ -63,11 +63,14 @@ int main()
         std::cout << abc << std::endl;
     };
      // or everything by reference
-    auto gg3 = [&]() mutable
+    auto gg4 = [&]()
     {
-        test = 9;
-        yu += abc;
+        test = 900;
+        yu += 500;
         std::cout << abc << std::endl;
     };
+
+    gg4();
     std::cout << test << std::endl;
+    std::cout << yu << std::endl;
 }
